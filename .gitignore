@@ -7,3 +7,6 @@
 *.tfstate
 
 variables.tf
+*.tfstate.*
+*.tfvars
+**/.terraform/*
