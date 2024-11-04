@@ -1,0 +1,9 @@
+*.auto.tfvars
+
+.terraform/
+
+.terraformrc
+
+*.tfstate
+
+variables.tf
