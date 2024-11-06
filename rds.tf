@@ -17,8 +17,8 @@ resource "aws_db_instance" "app_database" {
   instance_class       = "db.t3.micro" 
   identifier           = "appdatabase"
   db_name              = "appdatabase"
-  username             = "admin"
-  password             = "db*pass123"  
+  username             = var.rds_username
+  password             = var.rds_pass 
   publicly_accessible     = true
   db_subnet_group_name = aws_db_subnet_group.app_db_subnet_group.name
   vpc_security_group_ids = [aws_security_group.WebTrafficSG.id]
